@@ -3,98 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - GamePatty Games</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-        }
-        .title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .game {
-            color: red;
-        }
-        .patty {
-            color: orange;
-        }
-        p {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-        .contact-info {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #333;
-        }
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact Support - GamePatty Games</h1>
-    <p>Have questions or need help? Reach out to us and our team will assist you as soon as possible.</p>
-    
-    <div class="container">
-        <h1 class="title"><span class="game">GAME</span> <span class="patty">PATTY</span></h1>
-        <p>Fill out the form below to send us a message.</p>
-        <form onsubmit="sendEmail(event)">
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" rows="6" placeholder="Describe your issue or question..." required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <div class="contact-info">
-            <p>Or email us directly at: <a href="mailto:developer.sbgames@gmail.com">developer.sbgames@gmail.com</a></p>
+
+    <nav>
+        <img src="assets/logo.png" alt="GamePatty Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact Us</a>
         </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to GamePatty</h1>
+        <p>GamePatty is a premier indie game development studio dedicated to crafting immersive and engaging gaming experiences for players worldwide.</p>
+        <p>We specialize in creative storytelling, stunning pixel art, and innovative game mechanics.</p>
     </div>
-    
-    <script>
-        function sendEmail(event) {
-            event.preventDefault();
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            var subject = 'Support Request';
-            var mailtoLink = `mailto:developer.sbgames@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-            window.location.href = mailtoLink;
-        }
-    </script>
+
+    <footer>
+        <p>&copy; 2025 GamePatty. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
