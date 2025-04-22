@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Game Details | GamePatty</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/game.js"></script>
 </head>
 <body>
-
     <nav>
         <img src="assets/logo.png" alt="GamePatty Logo" class="logo">
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="games.html">Games</a>
+            <a href="games.html">Games</a>            
             <a href="about.html">About</a>
             <a href="privacy.html">Privacy Policy</a>
             <a href="support.html">Support</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </div>
+        <button id="toggle-dark-mode">🌙</button>
     </nav>
 
     <div class="container">
-        <h1>Welcome to GamePatty</h1>
-        <p>GamePatty is a premier indie game development studio dedicated to crafting immersive and engaging gaming experiences for players worldwide.</p>
-        <p>We specialize in creative storytelling, stunning pixel art, and innovative game mechanics.</p>
+        <h1 id="game-title"></h1>
+        <p id="game-description"></p>
+
+        <div class="screenshots" id="screenshots-container"></div>
+
+        <div id="game-links">
+            <!-- Buttons for Android, iOS, and HTML5 will be dynamically added here -->
+        </div>
+
+        <div id="game-frame-container"></div>
     </div>
 
     <footer>
         <p>&copy; 2025 GamePatty. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
